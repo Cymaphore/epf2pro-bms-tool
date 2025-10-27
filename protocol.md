@@ -57,6 +57,13 @@ Nominal output ratings:
 | **B** | BMS-Bus | 3.3V |
 | **-** | Load output (N) / charging input (N) / GND  | Shared for all other pins |
 
+Candidates:
+
+  * DS-C04M-A-4P-R3 (Male)
+  * DS-C04F-A-4P-S0 (Female)
+
+(M/F: Appears to point to male/female, -R/-S appears to point to Socket? Man. Dongguan Disong Electronics Technology Co., Ltd. has them)
+
 ### 2. Signal Map (Payload Detail)
 
 For now, all signals are interpreted as Big Endian. The `Bit Start` is relative to the payload section (starting at Byte 6 of the full frame).
