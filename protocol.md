@@ -33,6 +33,30 @@ What worked:
 When the BMS is awake, the status message appears in 5s intervals. The BMS can be waken up by multiple means (for example connecting the charger, etc.) and stops when
 the BMS goes to sleep.
 
+#### Connectors
+
+##### Charging-Port for external Charger
+
+Round "Lemew"-labeled connector, needs further investigation, inner conductor "+", outer conductor "-".
+
+Nominal output ratings:
+
+| Parameter | Value | Notes |
+| :---: | :---: | :---: |
+| **Output Voltage** | $54.6 V$ |  |
+| **Output Current** | $3.0 A$ |  |
+
+##### Scooter-Interface
+
+4 prong roughly 6.3 x 1.6mm flat blade connector. Exact model not yet identified.
+
+| Pin | Function | Notes |
+| :---: | :---: | :---: |
+| **+** | Load output (P) | Switchable thru protective circuits, needs further investigation |
+| **A** | Charging input (P) | Switched thru FET |
+| **B** | BMS-Bus | 3.3V |
+| **-** | Load output (N) / charging input (N) / GND  | Shared for all other pins |
+
 ### 2. Signal Map (Payload Detail)
 
 For now, all signals are interpreted as Big Endian. The `Bit Start` is relative to the payload section (starting at Byte 6 of the full frame).
